@@ -11,28 +11,28 @@
     <link rel="stylesheet" href="styles/combinar.css">
     <link rel="stylesheet" href="styles/responsividade.css">
     <!-- Scripts -->
+    <script src="scripts/gerar_grid.js" defer></script>
     <title>Combinar Grid</title>
 </head>
 <body>
     <header class="centro">
         <div class="container centro">
-            <a href="index.html">Página inicial</a>
-            <a href="combinar.html">Combinar grid</a>
+            <a href="index.html">Colunas</a>
         </div>
     </header>
     <section class="form centro">
         <h1>Combine as colunas para criar seu layout</h1>
         <form class="container">
-            <label for="tamCol" class="coluna-4">Tamanho da coluna: <input type="number" name="tamCol" id="#tamCol" min="1" max="12"></label>
-            <select name="opcaoAlinha" id="opcaoAlinha" class="coluna 5">
-                <option value="default">Escolha o tipo de alinhamento</option>
-                <option value="pad">Padrão</option>
+            <label for="tamCol">Numero da coluna: <input type="number" name="tamCol" id="tamCol" class="coluna-3" min="1" max="12"></label>
+            <button id="adicionar">Adicionar</button>
+            <select name="opcaoAlinha" id="opcaoAlinha" class="coluna 5" onchange="alinhar(this.value);">
+                <option value="default">Alinhamento:</option>
+                <option value="default">Padrão</option>
                 <option value="centro">Centro</option>
                 <option value="esquerda">Esquerda</option>
                 <option value="direita">Direita</option>
             </select>
-            <button>Adicionar</button>
-            <button>Limpar</button>
+            <button id="limpar">Limpar</button>
         </form>
     </section>
     <section>

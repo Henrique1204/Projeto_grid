@@ -1,7 +1,81 @@
+h1{
+    padding: 20px;
+    text-align: center;
+}
+
 .form select, .form button, input{
     padding: 2px 10px;
     border: none;
     border-radius: 5px;
     color: #333;
+    background-color: #eee;
     outline: none;
+}
+
+.exibicao{
+    background-color: #eee;
+    padding: 30px 0;
+    border: 2px solid #000;
+}
+
+/* Colunass */
+
+.exibicao .coluna-1{
+    height: 300px;
+    background-color: #B00;
+}
+
+.exibicao .coluna-2{
+    height: 300px;
+    background-color: #0B0;
+}
+
+.exibicao .coluna-3{
+    height: 300px;
+    background-color: #00B;
+}
+
+.exibicao .coluna-4{
+    height: 300px;
+    background-color: #F70;
+}
+
+.exibicao .coluna-5{
+    height: 300px;
+    background-color: #0F7;
+}
+
+.exibicao .coluna-6{
+    height: 300px;
+    background-color: #70F;
+}
+
+.exibicao .coluna-7{
+    height: 300px;
+    background-color: #7F0;
+}
+
+.exibicao .coluna-8{
+    height: 300px;
+    background-color: #07F;
+}
+
+.exibicao .coluna-9{
+    height: 300px;
+    background-color: #FF0;
+}
+
+.exibicao .coluna-10{
+    height: 300px;
+    background-color: #0FF;
+}
+
+.exibicao .coluna-11{
+    height: 300px;
+    background-color: #F0F;
+}
+
+.exibicao .coluna-12{
+    height: 300px;
+    background-color: #444;
 }
