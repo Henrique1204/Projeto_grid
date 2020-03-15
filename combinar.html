@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/posicionamento.css">
+    <link rel="stylesheet" href="styles/estilo.css">
+    <link rel="stylesheet" href="styles/combinar.css">
+    <link rel="stylesheet" href="styles/responsividade.css">
+    <!-- Scripts -->
+    <title>Combinar Grid</title>
+</head>
+<body>
+    <header class="centro">
+        <div class="container centro">
+            <a href="index.html">Página inicial</a>
+            <a href="combinar.html">Combinar grid</a>
+        </div>
+    </header>
+    <section class="form centro">
+        <h1>Combine as colunas para criar seu layout</h1>
+        <form class="container">
+            <label for="tamCol" class="coluna-4">Tamanho da coluna: <input type="number" name="tamCol" id="#tamCol" min="1" max="12"></label>
+            <select name="opcaoAlinha" id="opcaoAlinha" class="coluna 5">
+                <option value="default">Escolha o tipo de alinhamento</option>
+                <option value="pad">Padrão</option>
+                <option value="centro">Centro</option>
+                <option value="esquerda">Esquerda</option>
+                <option value="direita">Direita</option>
+            </select>
+            <button>Adicionar</button>
+            <button>Limpar</button>
+        </form>
+    </section>
+    <section>
+        <div class="container exibicao">
+        </div>
+    </section>
+</body>
