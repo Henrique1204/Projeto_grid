@@ -1,0 +1,55 @@
+@media only screen and (max-width: 1300px){
+	header nav{
+        right: 220px;
+    }
+}
+
+/* Break 740 - 979 */
+
+@media only screen and (max-width: 979px){
+    header nav{
+        right: 100px;
+    }
+}
+
+/* Break 300 - 739 */
+
+@media only screen and (max-width: 739px){
+    body{
+        padding-top: 150px;
+    }
+
+    header{
+        height: 150px;
+    }
+
+    header>div:nth-child(1){
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    header>div:nth-child(1)>a, header>div:nth-child(1)>#menu{
+        margin: 0;
+    }
+
+    header nav{
+        right: 50px;
+    }
+
+    #colunas1 .coluna-1, #colunas2 .coluna-2, #colunas3 .coluna-3, #colunas4 .coluna-4, #colunas5 .coluna-5, #colunas6 .coluna-6, #colunas7 .coluna-7, #colunas8 .coluna-8, #colunas9 .coluna-9, #colunas10 .coluna-10, #colunas11 .coluna-11, #colunas12 .coluna-12{
+        display: none;
+    }
+
+    #colunas1 .coluna-1:nth-child(1), #colunas2 .coluna-2:nth-child(1), #colunas3 .coluna-3:nth-child(1), #colunas4 .coluna-4:nth-child(1), #colunas5 .coluna-5:nth-child(1), #colunas6 .coluna-6:nth-child(1), #colunas7 .coluna-7:nth-child(1), #colunas8 .coluna-8:nth-child(1), #colunas9 .coluna-9:nth-child(1), #colunas10 .coluna-10:nth-child(1), #colunas11 .coluna-11:nth-child(1), #colunas12 .coluna-12:nth-child(1){
+        height: 300px;
+        display: inline-block;
+    }
+
+    #subir{
+        color: #bbb;
+        background-color: #333;
+        left: 80vw;
+        top: 80vh;
+    }
+}
+

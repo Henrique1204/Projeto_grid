@@ -17,7 +17,12 @@ function rolar(){
     //Rolar suavemente
     let seletor = $(this).attr('href');
     let posicao = $(seletor).offset().top;
-    $('HTML, body').animate({scrollTop: posicao - 80}, 1500);
+    if(window.innerWidth < 740){
+        $('HTML, body').animate({scrollTop: posicao - 150}, 1500);
+    }
+    else{
+        $('HTML, body').animate({scrollTop: posicao - 80}, 1500);
+    }
 
     //Fechar menu
     abrir_menu();

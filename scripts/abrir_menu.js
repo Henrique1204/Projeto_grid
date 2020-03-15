@@ -14,7 +14,7 @@ function abrir_menu(){
     }else{
         menuBtn.style.color = '#bbb';
         menuBtn.style.backgroundColor = '#333';
-        menu[0].style.top = '-31px';
+        menu[0].style.top = '-16px';
         menu[0].style.opacity = '1';
         contaClique = 0;
     }
