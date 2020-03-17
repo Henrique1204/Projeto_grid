@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Estilos -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/posicionamento.css">
-    <link rel="stylesheet" href="styles/estilo.css">
-    <link rel="stylesheet" href="styles/combinar.css">
-    <link rel="stylesheet" href="styles/posicionamento_script.css">
-    <link rel="stylesheet" href="styles/responsividade.css">
-    <!-- Scripts -->
-    <script src="scripts/gerar_grid.js" defer></script>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <title>Combinar Grid</title>
-</head>
-<body>
-    <header class="centro">
-        <div class="container centro">
-            <a href="index.html">Colunas</a>
-        </div>
-    </header>
-    <section class="form centro">
-        <h1 class="titulo">Combine as colunas para criar seu layout</h1>
-        <form class="container centro">
-            <div class="coluna-5">
-                <label for="tamCol" class="coluna-3 campo">Numero da coluna<input type="number" name="tamCol" id="tamCol"min="1" max="12"></label>
-                <button id="adicionar">Adicionar</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Estilos -->
+        <link rel="stylesheet" href="style_minificado.css">
+        <!-- Scripts -->
+        <script src="scripts/gerar_grid.js" defer></script>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Combinar Grid</title>
+    </head>
+    <body>
+        <header class="centro">
+            <div class="container centro">
+                <a href="index.html">Colunas</a>
             </div>
-            <div class="coluna-5">
-                <label for="opcaoAlinha" class="coluna-2 campo campoAlinhamento">Alinhamento
-                    <select name="opcaoAlinha" id="opcaoAlinha" class="coluna 5" onchange="alinhar(this.value);">
-                        <option value="default">Padrão</option>
-                        <option value="centro">Centro</option>
-                        <option value="esquerda">Esquerda</option>
-                        <option value="direita">Direita</option>
-                    </select>
-                </label>
-                <label for="opcaoModelo" class="coluna-2 campo campoModelo">Modelo
-                    <select name="opcaoModelo" id="opcaoModelo" class="coluna 5" onchange="mudarModelo(this.value);">
-                        <option value="default">Padrão</option>
-                        <option value="1300">1320px</option>
-                        <option value="900">980px</option>
-                        <option value="700">740px</option>
-                    </select>
-                </label>
-            </div>
-            <button id="limpar">Limpar</button>
-        </form>
-    </section>
-    <section>
-        <div class="container contEstilo" id="exibicao">
-        </div>
-    </section>
-</body>
+        </header>
+        <section class="form centro">
+            <h2 class="titulo">Combine as colunas para criar seu layout</h2>
+            <form class="container centro">
+                <div class="coluna-5">
+                    <label for="tamCol" class="coluna-3 campo">Numero da coluna<input type="number" name="tamCol" id="tamCol" min="1" max="12"></label>
+                    <button id="adicionar">Adicionar</button>
+                </div>
+                <div class="coluna-5">
+                    <label for="opcaoAlinha" class="coluna-2 campo campoAlinhamento">Alinhamento
+                        <select name="opcaoAlinha" id="opcaoAlinha" class="coluna 5" onchange="alinhar(this.value);">
+                            <option value="default">Padrão</option>
+                            <option value="centro">Centro</option>
+                            <option value="esquerda">Esquerda</option>
+                            <option value="direita">Direita</option>
+                        </select>
+                    </label>
+                    <label for="opcaoModelo" class="coluna-2 campo campoModelo">Modelo
+                        <select name="opcaoModelo" id="opcaoModelo" class="coluna 5" onchange="mudarModelo(this.value);">
+                            <option value="default">Padrão</option>
+                            <option value="1300">1320px</option>
+                            <option value="900">980px</option>
+                            <option value="700">740px</option>
+                        </select>
+                    </label>
+                </div>
+                <button id="limpar">Limpar</button>
+            </form>
+        </section>
+        <section class="sessaoExibicao">
+            <div class="container contEstilo" id="exibicao"></div>
+        </section>
+        <footer class="centro">
+            <h1>Criado por Paulo Henrique | <a href="https://github.com/Henrique1204"><strong>Github</strong></a></h1>
+        </footer>
+    </body>
+</html>
