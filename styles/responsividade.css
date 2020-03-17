@@ -1,6 +1,10 @@
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1319px){
 	header nav{
         right: 285px;
+    }
+
+    .campoModelo{
+        display: none;
     }
 }
 
@@ -36,6 +40,10 @@
         right: 55px;
     }
 
+    section{
+        padding: 15px 0;
+    }
+
     #colunas1 .coluna-1, #colunas2 .coluna-2, #colunas3 .coluna-3, #colunas4 .coluna-4, #colunas5 .coluna-5, #colunas6 .coluna-6, #colunas7 .coluna-7, #colunas8 .coluna-8, #colunas9 .coluna-9, #colunas10 .coluna-10, #colunas11 .coluna-11, #colunas12 .coluna-12{
         display: none;
     }
@@ -50,5 +58,17 @@
         background-color: #333;
         left: 80vw;
         top: 80vh;
+    }
+
+    .campoAlinhamento{
+        display: none;
+    }
+
+    .titulo{
+        font-size: 24px;
+    }
+
+    .form>.container>div:nth-child(1){
+        justify-content: center;
     }
 }

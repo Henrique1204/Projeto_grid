@@ -7,6 +7,7 @@
 
 .form>.container>div:nth-child(1){
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -53,64 +54,80 @@
     outline: none;
 }
 
+#limpar{
+    margin: 30px 0 0;
+}
+
 /* Colunass */
 
 #exibicao .coluna-1{
     height: 300px;
-    background-color: #B00;
+    background: url('../img/coluna-1.svg') no-repeat center;
+    background-size: cover;
 }
 
 #exibicao .coluna-2{
     height: 300px;
-    background-color: #0B0;
+    background: url('../img/coluna-2.svg') no-repeat center;
+    background-size: cover;
 }
 
 #exibicao .coluna-3{
     height: 300px;
-    background-color: #00B;
+    background: url('../img/coluna-3.svg') no-repeat center;
+    background-size: cover;
 }
 
 #exibicao .coluna-4{
     height: 300px;
-    background-color: #F70;
+    background: url('../img/coluna-4.svg') no-repeat center;
+    background-size: cover;
 }
 
 #exibicao .coluna-5{
     height: 300px;
-    background-color: #0F7;
+    background: url('../img/coluna-5.svg') no-repeat center;
+    background-size: cover;
 }
 
 #exibicao .coluna-6{
     height: 300px;
-    background-color: #70F;
+    background: url('../img/coluna-6.svg') no-repeat center;
+    background-size: cover;
 }
 
 #exibicao .coluna-7{
     height: 300px;
-    background-color: #7F0;
+    background: url('../img/coluna-7.svg') no-repeat center;
+    background-size: cover;
 }
 
 #exibicao .coluna-8{
     height: 300px;
-    background-color: #07F;
+    background: url('../img/coluna-8.svg') no-repeat center;
+    background-size: cover;
 }
 
 #exibicao .coluna-9{
     height: 300px;
-    background-color: #FF0;
+    background: url('../img/coluna-9.svg') no-repeat center;
+    background-size: cover;
 }
 
 #exibicao .coluna-10{
     height: 300px;
-    background-color: #0FF;
+    background: url('../img/coluna-10.svg') no-repeat center;
+    background-size: cover;
 }
 
 #exibicao .coluna-11{
     height: 300px;
-    background-color: #F0F;
+    background: url('../img/coluna-11.svg') no-repeat center;
+    background-size: cover;
 }
 
 #exibicao .coluna-12{
     height: 300px;
-    background-color: #FFF;
+    background: url('../img/coluna-12.svg') no-repeat center;
+    background-size: cover;
 }

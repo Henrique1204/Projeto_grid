@@ -26,12 +26,12 @@
     <section class="form centro">
         <h1 class="titulo">Combine as colunas para criar seu layout</h1>
         <form class="container centro">
-            <div class="coluna-3">
-                <label for="tamCol" class="coluna-2 campo">Numero da coluna<input type="number" name="tamCol" id="tamCol"min="1" max="12"></label>
+            <div class="coluna-5">
+                <label for="tamCol" class="coluna-3 campo">Numero da coluna<input type="number" name="tamCol" id="tamCol"min="1" max="12"></label>
                 <button id="adicionar">Adicionar</button>
             </div>
             <div class="coluna-5">
-                <label for="opcaoAlinha" class="coluna-2 campo">Alinhamento
+                <label for="opcaoAlinha" class="coluna-2 campo campoAlinhamento">Alinhamento
                     <select name="opcaoAlinha" id="opcaoAlinha" class="coluna 5" onchange="alinhar(this.value);">
                         <option value="default">Padrão</option>
                         <option value="centro">Centro</option>
@@ -39,7 +39,7 @@
                         <option value="direita">Direita</option>
                     </select>
                 </label>
-                <label for="opcaoModelo" class="coluna-2 campo">Modelo
+                <label for="opcaoModelo" class="coluna-2 campo campoModelo">Modelo
                     <select name="opcaoModelo" id="opcaoModelo" class="coluna 5" onchange="mudarModelo(this.value);">
                         <option value="default">Padrão</option>
                         <option value="1300">1320px</option>
