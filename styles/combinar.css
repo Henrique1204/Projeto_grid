@@ -1,81 +1,116 @@
-h1{
+.titulo{
+    font-size: 32px;
+    font-weight: 900;
     padding: 20px;
     text-align: center;
 }
 
-.form select, .form button, input{
+.form>.container>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.form>.container>div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.campo{
+    height: 55px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.campo input, .campo select{
+    width: 100%;
+    height: 25px;
     padding: 2px 10px;
+    margin-top: 8px;
     border: none;
     border-radius: 5px;
-    color: #333;
-    background-color: #eee;
+    color: #222;
+    background-color: #EEE;
+    box-shadow: 3px 3px 5px #111;
     outline: none;
 }
 
-.exibicao{
-    background-color: #eee;
-    padding: 30px 0;
-    border: 2px solid #000;
+.form button{
+    height: 25px;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #bbb;
+    background-color: #333;
+    box-shadow: 3px 3px 5px #111;
+    outline: none;
 }
 
 /* Colunass */
 
-.exibicao .coluna-1{
+#exibicao .coluna-1{
     height: 300px;
     background-color: #B00;
 }
 
-.exibicao .coluna-2{
+#exibicao .coluna-2{
     height: 300px;
     background-color: #0B0;
 }
 
-.exibicao .coluna-3{
+#exibicao .coluna-3{
     height: 300px;
     background-color: #00B;
 }
 
-.exibicao .coluna-4{
+#exibicao .coluna-4{
     height: 300px;
     background-color: #F70;
 }
 
-.exibicao .coluna-5{
+#exibicao .coluna-5{
     height: 300px;
     background-color: #0F7;
 }
 
-.exibicao .coluna-6{
+#exibicao .coluna-6{
     height: 300px;
     background-color: #70F;
 }
 
-.exibicao .coluna-7{
+#exibicao .coluna-7{
     height: 300px;
     background-color: #7F0;
 }
 
-.exibicao .coluna-8{
+#exibicao .coluna-8{
     height: 300px;
     background-color: #07F;
 }
 
-.exibicao .coluna-9{
+#exibicao .coluna-9{
     height: 300px;
     background-color: #FF0;
 }
 
-.exibicao .coluna-10{
+#exibicao .coluna-10{
     height: 300px;
     background-color: #0FF;
 }
 
-.exibicao .coluna-11{
+#exibicao .coluna-11{
     height: 300px;
     background-color: #F0F;
 }
 
-.exibicao .coluna-12{
+#exibicao .coluna-12{
     height: 300px;
-    background-color: #444;
+    background-color: #FFF;
 }

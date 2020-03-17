@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1300px){
 	header nav{
-        right: 300px;
+        right: 285px;
     }
 }
 
@@ -8,7 +8,7 @@
 
 @media only screen and (max-width: 979px){
     header nav{
-        right: 175px;
+        right: 165px;
     }
 }
 

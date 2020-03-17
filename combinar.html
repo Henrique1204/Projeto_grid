@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/posicionamento.css">
     <link rel="stylesheet" href="styles/estilo.css">
     <link rel="stylesheet" href="styles/combinar.css">
+    <link rel="stylesheet" href="styles/posicionamento_script.css">
     <link rel="stylesheet" href="styles/responsividade.css">
     <!-- Scripts -->
     <script src="scripts/gerar_grid.js" defer></script>
@@ -23,22 +24,35 @@
         </div>
     </header>
     <section class="form centro">
-        <h1>Combine as colunas para criar seu layout</h1>
-        <form class="container">
-            <label for="tamCol">Numero da coluna: <input type="number" name="tamCol" id="tamCol" class="coluna-3" min="1" max="12"></label>
-            <button id="adicionar">Adicionar</button>
-            <select name="opcaoAlinha" id="opcaoAlinha" class="coluna 5" onchange="alinhar(this.value);">
-                <option value="default">Alinhamento:</option>
-                <option value="default">Padrão</option>
-                <option value="centro">Centro</option>
-                <option value="esquerda">Esquerda</option>
-                <option value="direita">Direita</option>
-            </select>
+        <h1 class="titulo">Combine as colunas para criar seu layout</h1>
+        <form class="container centro">
+            <div class="coluna-3">
+                <label for="tamCol" class="coluna-2 campo">Numero da coluna<input type="number" name="tamCol" id="tamCol"min="1" max="12"></label>
+                <button id="adicionar">Adicionar</button>
+            </div>
+            <div class="coluna-5">
+                <label for="opcaoAlinha" class="coluna-2 campo">Alinhamento
+                    <select name="opcaoAlinha" id="opcaoAlinha" class="coluna 5" onchange="alinhar(this.value);">
+                        <option value="default">Padrão</option>
+                        <option value="centro">Centro</option>
+                        <option value="esquerda">Esquerda</option>
+                        <option value="direita">Direita</option>
+                    </select>
+                </label>
+                <label for="opcaoModelo" class="coluna-2 campo">Modelo
+                    <select name="opcaoModelo" id="opcaoModelo" class="coluna 5" onchange="mudarModelo(this.value);">
+                        <option value="default">Padrão</option>
+                        <option value="1300">1320px</option>
+                        <option value="900">980px</option>
+                        <option value="700">740px</option>
+                    </select>
+                </label>
+            </div>
             <button id="limpar">Limpar</button>
         </form>
     </section>
     <section>
-        <div class="container exibicao">
+        <div class="container contEstilo" id="exibicao">
         </div>
     </section>
 </body>

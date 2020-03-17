@@ -1,9 +1,7 @@
 body{
     padding-top: 80px;
-    font-size: 24px;
-    font-family: sans-serif;
-    text-transform: uppercase;
     color: #EEE;
+    font-family: sans-serif;
     background-color: #222;
 }
 
@@ -26,7 +24,7 @@ header>div:nth-child(1){
 header nav{
     position: absolute;
     top: -700px;
-    right: 480px;
+    right: 470px;
     opacity: 1;
     transition: 0.8s;
 }
@@ -51,9 +49,10 @@ header li{
 header a{
     margin: 0 15px;
     padding: 2px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     text-decoration: none;
+    text-transform: uppercase;
     color: #BBB;
     display: inline-block;
 }
@@ -79,6 +78,7 @@ header a:hover{
     outline: none;
 }
 
+
 /* Sessões de exibição das colunas */
 
 section{
@@ -89,8 +89,21 @@ section{
     box-sizing: border-box;
 }
 
-section h2{
+.sub_titulo{
+    font-size: 24px;
     font-weight: 900;
+}
+
+.contEstilo{
+    padding: 30px 0;
+    margin-top: 30px;
+    border-radius: 4px;
+    background-color: #252525;
+    box-shadow: inset 5px 5px 10px rgba(2, 2, 2, 0.5);
+}
+
+.contEstilo > div{
+    box-shadow: 4px 4px 5px rgba(2, 2, 2, 0.5);
 }
 
 #colunas1 .coluna-1{

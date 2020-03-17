@@ -1,5 +1,7 @@
 const form = document.querySelector('.form form');
-const container = document.querySelector('.exibicao');
+const container = document.querySelector('#exibicao');
+const opcaoAlinha = document.querySelector('#opcaoAlinha');
+const opcaoModelo = document.querySelector('#opcaoModelo');
 let colunas = [];
 
 //Impedir a página de dar refresh
@@ -125,7 +127,47 @@ function alinhar(item){
     }
 };
 
+//Mudar modelo
+function mudarModelo(item){
+    switch (item){
+        case "default":
+            container.className = '';
+            container.classList.add('container');
+            container.classList.add('contEstilo');
+        break;
+        case "1300":
+            container.className = '';
+            container.classList.add('cont960');
+            container.classList.add('contEstilo');
+        break;
+        case "900":
+            container.className = '';
+            container.classList.add('cont720');
+            container.classList.add('contEstilo');
+        break;
+        case "700":
+            container.className = '';
+            container.classList.add('cont300');
+            container.classList.add('contEstilo');
+        break;
+        default:
+            container.className = '';
+            container.classList.add('container');
+            container.classList.add('contEstilo');
+        break;
+    }
+}
+
 document.getElementById('limpar').addEventListener('click', ()=>{
+    //Limpar elementos
     container.innerHTML = "";
     colunas = [];
+    //Ajustar alinhamento
+    opcaoAlinha.selectedIndex = 0;
+    container.style.justifyContent = "space-between";
+    //Ajustar modelo
+    opcaoModelo.selectedIndex = 0;
+    container.className = '';
+    container.classList.add('container');
+    container.classList.add('contEstilo');
 });
